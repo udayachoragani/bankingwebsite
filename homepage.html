@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mysite</title>
+    <link rel="stylesheet" href="homepage.css">
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Ysabeau+Office:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Handlee&family=Shadows+Into+Light&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header{
+    width: 100%;
+    min-height: 100vh;
+    background-image:linear-gradient(rgba(40, 40, 41, 0.7),rgba(40,40,41,0.7)), url("https://news4tamil.com/wp-content/uploads/2023/07/How-Do-Banks-Raise-Funding_Blog-banner_511x271-3.png");
+    background-size: cover;
+}
+nav{
+    display: flex;
+    padding: 2% 2%;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar{
+    flex: 1;
+    text-align: center;
+}
+nav .navbar ul li{
+    display: inline-block;
+    padding: 0 2%;
+    /* position: relative; */
+}
+nav .navbar ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+}
+.navbar ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background:white;
+    transition: 0.5s;
+    display: block;
+    margin: auto;
+}
+.navbar ul li:hover::after{
+    width: 100%;
+}
+nav h1{
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    font-family: 'Ysabeau Office', sans-serif;
+}
+nav img{
+    width: 40px;
+    height: 40px;
+    margin: 0 20px;
+    left: 0;
+}
+.text{
+    margin-top: 8%;
+    text-align: center;
+}
+.text p{
+    color: white;
+    background: transparent;
+    font-size: 34px;
+    font-family: 'Handlee', cursive;
+    margin: 10px 0 100px;
+}
+.text .btn{
+    display: inline-block;
+    color: white;
+    border: 1px solid white;
+    background: transparent;
+    text-decoration: none; 
+    padding: 12px 34px;
+    /* position: relative; */
+}
+.text .btn:hover{
+    background-color: rgb(144, 144, 146);
+    border: 1px solid rgb(144, 144, 146);
+    transition:1s;
+}
+</style>
+<body>
+    <section class="header">
+        <nav>
+            <img src="https://cdn-icons-png.flaticon.com/512/195/195488.png" alt="ntg">
+            <h1>Alpha Bank</h1>
+            <div class="navbar">
+                <ul>
+                    <li><a class="active" href="">HOME</a></li>
+                    <li><a href="account.html">ADD ACCOUNT</a></li>
+                    <li><a href="customers.html">CUSTOMERS</a></li>
+                    <!-- <li><a href="contact.html">CONTACT</a></li> -->
+                </ul>
+            </div>
+        </nav>
+        <div class="text">
+            <p>Simplified Banking...</p>
+            <a href="account.html" class="btn">Get Started</a>
+        </div>
+    </section>
+</body>
+
+</html>

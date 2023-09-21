@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Account</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Ysabeau+Office:wght@300&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Handlee&family=Shadows+Into+Light&display=swap');
+
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    .header {
+        width: 100%;
+        min-height: 100vh;
+        /* background-image:linear-gradient(rgba(53,54,56,0.7),rgba(53,54,56,0.7)), url("https://www.bajajfinservmarkets.in/discover/wp-content/uploads/2022/12/How-Do-Banks-Raise-Funding_Blog-banner_511x271.png");
+    background-size: cover; */
+    }
+
+    nav {
+        display: flex;
+        padding: 2% 2%;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .navbar {
+        flex: 1;
+        text-align: center;
+    }
+
+    nav .navbar ul li {
+        display: inline-block;
+        padding: 0 2%;
+        /* position: relative; */
+    }
+
+    nav .navbar ul li a {
+        color: black;
+        text-decoration: none;
+        font-size: 13px;
+    }
+
+    .navbar ul li::after {
+        content: '';
+        width: 0%;
+        height: 2px;
+        background: black;
+        transition: 0.5s;
+        display: block;
+        margin: auto;
+    }
+
+    .navbar ul li:hover::after {
+        width: 100%;
+    }
+
+    nav h1 {
+        text-align: center;
+        font-size: 30px;
+        color: rgba(53, 54, 56, 0.7);
+        font-family: 'Ysabeau Office', sans-serif;
+    }
+
+    nav img {
+        width: 40px;
+        height: 40px;
+        margin: 0 20px;
+        left: 0;
+    }
+
+    .content {
+        position: relative;
+        margin-top: 40px;
+        width: 450px;
+        height: 70vh;
+        background: #dedede;
+        border-radius: 5px;
+        left: 38%;
+    }
+
+    .label {
+        padding: 20px 130px;
+        font-size: 30px;
+        font-weight: bold;
+        color: #140d5b;
+    }
+
+    .loginform {
+        padding: 20px 40px;
+    }
+
+    .loginform .one {
+        font-size: 18px;
+        color: #130f40;
+        margin: 5px 0;
+    }
+
+    .loginform input {
+        height: 40px;
+        width: 350px;
+        padding: 0 5px;
+        font-size: 18px;
+        outline: none;
+        border: 1px solid silver;
+    }
+
+    /* 
+    .loginform .two {
+        margin-top: 30px;
+    } */
+
+    .loginform .btn {
+        margin: 35px 70px 30px 80px;
+        text-align: center;
+        height: 45px;
+        width: 200px;
+        font-size: 20px;
+        color: white;
+        outline: none;
+        cursor: pointer;
+        font-weight: bold;
+        background: #1a237e;
+        border-radius: 3px;
+        border: 1px solid #3949ab;
+        transform: 0.5s;
+    }
+
+    .loginform .btn:hover {
+        background: #151c6a;
+    }
+</style>
+
+<body>
+    <section class="header">
+        <nav>
+            <img src="https://cdn-icons-png.flaticon.com/512/195/195488.png" alt="ntg">
+            <h1>Alpha Bank</h1>
+            <div class="navbar">
+                <ul>
+                    <li><a class="active" href="homepage.html">HOME</a></li>
+                    <li><a href="account.html">ADD ACCOUNT</a></li>
+                    <li><a href="customers.html">CUSTOMERS</a></li>
+                    <!-- <li><a href="contact.html">CONTACT</a></li> -->
+                </ul>
+            </div>
+        </nav>
+        <div class="content">
+            <h1 class="label">
+                Create An Account
+            </h1>
+            <form class="loginform">
+                <div class="one">Account Number</div>
+                <input type="number" autocomplete="off" name="acno">
+                <div class="two">Name</div>
+                <input type="text" name="name">
+                <div class="three">E-mail</div>
+                <input type="email" name="mail" id="mail">
+                <div class="four">Balance</div>
+                <input type="number" name="balance" id="balance">
+                <!-- <input type="submit" value="Submit"> -->
+                <button class="btn" type="submit" onclick="myfunc()">Create</button>
+            </form>
+        </div>
+    </section>
+    <script>
+        function myfunc(){
+            window.alert("You have Successfully Created Your Account");
+        }
+    </script>
+</body>
+
+</html>

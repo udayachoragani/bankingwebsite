@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Ysabeau+Office:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Handlee&family=Shadows+Into+Light&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+.header{
+    width: 100%;
+    min-height: 100vh;
+    /* background-image:linear-gradient(rgba(53,54,56,0.7),rgba(53,54,56,0.7)), url("https://www.bajajfinservmarkets.in/discover/wp-content/uploads/2022/12/How-Do-Banks-Raise-Funding_Blog-banner_511x271.png");
+    background-size: cover; */
+}
+nav{
+    display: flex;
+    padding: 2% 2%;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar{
+    flex: 1;
+    text-align: center;
+}
+nav .navbar ul li{
+    display: inline-block;
+    padding: 0 2%;
+    /* position: relative; */
+}
+nav .navbar ul li a{
+    color: black;
+    text-decoration: none;
+    font-size: 13px;
+}
+.navbar ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background:black;
+    transition: 0.5s;
+    display: block;
+    margin: auto;
+}
+.navbar ul li:hover::after{
+    width: 100%;
+}
+nav h1{
+    text-align: center;
+    font-size: 30px;
+    color:rgba(53,54,56,0.7);
+    font-family: 'Ysabeau Office', sans-serif;
+}
+nav img{
+    width: 40px;
+    height: 40px;
+    margin: 0 20px;
+    left: 0;
+}
+.table-content{
+    margin: 20px;
+    height: 50vh;
+    overflow: auto;
+}
+.table-row{
+    display: table;
+    width: 80%;
+    font-size: 12px;
+    font-family: sans-serif;
+    margin: 10px auto;
+    padding: 12px 0;
+    color: #555;
+    /* border: 2px solid blue; */
+    background: transparent;
+    box-shadow: 0 1px 4px 0 rgba(0,0,50,0.3);
+}
+.table-cell{
+    display: table-cell;
+    text-align: center;
+    padding: 4px 0;
+    border-right: 1px solid #d6d4d4;
+    vertical-align: middle;
+    width: 20%;
+}
+#head{
+    color: white;
+    background: rgb(103, 147, 243);
+    box-shadow: none;
+}
+.text{
+    text-align: center;
+}
+.text .transaction{
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* margin-bottom: 20px; */
+}
+.text .transaction form select{
+    width: 100px;
+    height: 25px;
+    /* border: 2px solid red; */
+}
+.btn{
+    display: inline-block;
+    color: white;
+    border: 1px solid white;
+    background: black;
+    text-decoration: none; 
+    padding: 12px 34px;
+}
+.btn:hover{
+    background: rgb(75, 71, 71);
+    transition: 0.5s;
+}
